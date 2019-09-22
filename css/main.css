@@ -1,0 +1,984 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	width: 1230px;
+	margin: 0 auto;
+	padding: 80px 30px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.main-page-header {
+	width: 100%;
+	height: 134px;
+	display: flex;
+	position: absolute;
+	z-index: 2;
+	box-sizing: border-box;
+}
+.main-page-header .wrapper {
+    position: relative;
+    padding: 0 30px; 
+}
+.main-page-header .wrapper .logo-box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-decoration: none;
+	color: #fff;
+}
+.main-page-header .wrapper .logo-box .logo-text {
+	font-family: 'Raleway';
+	font-size: 34px;
+	font-weight: 100;
+}
+.main-page-header .wrapper .logo-box img {
+	width: 64px;
+	height: 56px;
+}
+.main-page-header .wrapper nav {
+	font-family: "Montserrat";
+	font-weight: 100;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+.main-page-header .wrapper nav ul {
+	display: flex;
+	list-style-type: none;
+	width: 638px;
+	justify-content: space-between;
+}
+.main-page-header .wrapper nav ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+.main-page-header .wrapper nav ul li a:hover {
+	color: #c7b299;
+}
+.main-page-header .wrapper nav .shop-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 70px;
+	margin-left: 60px;
+}
+.main-page-header .wrapper nav .shop-box .cart-icon {
+	border:none;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+}
+.main-page-header .wrapper nav .shop-box .icon {
+	fill: #fff;
+}
+.main-page-header .wrapper nav .shop-box .icon:hover {
+	fill: #c7b299;
+}
+.main-page-header .wrapper .menu-icon {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	width: 64px;
+	height: 39px;
+	position: relative;
+}
+.main-page-header .wrapper .menu-icon .icon {
+	display: block;
+	background-color: #fff;
+	width: 64px;
+	height: 9px;
+}
+.main-page-header .wrapper .menu-icon:active .icon {
+	position: absolute;
+}
+.main-page-header .wrapper .menu-icon:active .line-1 {
+	transform: rotate(45deg);
+	top: 10px;
+}
+.main-page-header .wrapper .menu-icon:active .line-2 {
+	display: none;
+}
+.main-page-header .wrapper .menu-icon:active .line-3 {
+	transform: rotate(-45deg);
+	top: 10px;
+}
+
+.main-page-content .main-page-slider {
+	background-color: black;
+	background-image: url(../img/background-image.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	width: 100%;
+	height: 1024px;
+}
+.main-page-content .main-page-slider .wrapper {
+	height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.main-page-content .main-page-slider .wrapper .main-page-slider-content {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	text-align: center;
+}
+.main-page-content .main-page-slider .wrapper .main-page-slider-content .arrows {
+	fill: #fff;
+	opacity: 0.5;
+	width: 40px;
+	height: 73px;
+}
+.main-page-content .main-page-slider .wrapper .main-page-slider-content .arrows:hover {
+	fill: #c7b299;
+}
+.main-page-content .main-page-slider .wrapper .main-page-slider-content .left {
+	position: absolute;
+	left: -230px;
+}
+.main-page-content .main-page-slider .wrapper .main-page-slider-content .right {
+	position: absolute;
+	right: -230px;
+}
+.main-page-content .main-page-slider .wrapper .main-page-slider-content .text-block {
+	display: block;
+	width: 588px;
+}
+.main-page-content .main-page-slider .wrapper .main-page-slider-content .text-block .pre-text {
+	font-family: "Raleway medium";
+	font-size: 36px;
+}
+.main-page-content .main-page-slider .wrapper .main-page-slider-content .text-block .title {
+	font-family: "Raleway";
+	font-size: 52px;
+	font-weight: bolder;
+	line-height: 1.5;
+}
+.main-page-content .main-page-slider .wrapper .main-page-slider-content .text-block .desc {
+	font-family: "Montserrat Light";
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 55px;
+}
+.main-page-content .main-page-slider .wrapper .main-page-slider-content .text-block .start {
+	width: 170px;
+	height: 53px;
+	background-color: transparent;
+	font-family: "Raleway";
+	font-size: 14px;
+	line-height: 1.643;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #998675; 
+	color: #fff;
+	text-transform: uppercase;
+	outline: none;
+}
+.main-page-content .main-page-slider .wrapper .main-page-slider-content .text-block .start:hover {
+	background-color: #998675;
+	cursor: pointer;
+}
+.main-page-content .main-page-slider .wrapper .main-page-slider-radios {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 94px;
+	position: absolute;
+	bottom: 40px;
+}
+.main-page-content .main-page-slider .wrapper .main-page-slider-radios .radio {
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	background-color: #969493;
+	box-sizing: border-box;
+}
+.main-page-content .main-page-slider .wrapper .main-page-slider-radios .radio:hover {
+	width: 15px;
+	height: 15px;
+	border: 2px solid #998675;
+	background-color: transparent;
+	opacity: 1;
+}
+.main-page-content .main-page-services {
+	background-color: #fff;
+	width: 100%;
+	display: block;
+}
+.main-page-content .main-page-services .wrapper {
+	text-align: center;
+	box-sizing: border-box;
+	color: #555555;
+}
+.main-page-content .main-page-services .wrapper .service {
+	display: block;
+	width: 266px;
+	cursor: pointer;
+}
+.main-page-content .main-page-services .wrapper .service .service-icon {
+	fill: #555555;
+	margin-bottom: 30px;
+}
+.main-page-content .main-page-services .wrapper .service .service-title {
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 22px;
+	margin-bottom: 25px;
+}
+.main-page-content .main-page-services .wrapper .service .service-desc {
+	font-family: "Montserrat";
+	font-weight: 100;
+	font-size: 14px;
+	line-height: 24px;
+	color: #8c8c8c;
+}
+.main-page-content .main-page-services .wrapper .service .line {
+	background-color: #c7b299;
+	width: 70px;
+	height: 3px;
+	opacity: 0.5;
+	margin: 30px auto;
+	border: none;
+}
+.main-page-content .main-page-services .wrapper .service:hover .service-icon {
+	fill: #c7b299;
+}
+.main-page-content .main-page-services .wrapper .service:hover .line {
+	opacity: 1;
+}
+.main-page-content .main-page-services .wrapper .service:hover .service-title {
+	color: #c7b299;
+}
+.main-page-content .main-page-browsers {
+	background-color: #fbfaf8;
+	width: 100%;
+	display: block;
+}
+.main-page-content .main-page-browsers .wrapper {
+	display: block;
+	text-align: center;
+	padding: 80px 0 0 0;
+	box-sizing: border-box;
+	color: #555555;
+}
+.main-page-content .main-page-browsers .wrapper .title {
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.main-page-content .main-page-browsers .wrapper .desc {
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 28px;
+	margin: auto;
+	margin-bottom: 40px;
+	width: 766px;
+}
+.main-page-content .main-page-browsers .wrapper img {
+	vertical-align: bottom;
+	width: 100%;
+	height: 100%;
+}
+.main-page-content .main-page-purchase-block {
+	background: rgba(33,27,25,1);
+	background: -moz-linear-gradient(left, rgba(33,27,25,1) 0%, rgba(57,40,32,1) 0%, rgba(57,40,32,1) 0%, rgba(0,0,11,1) 0%, rgba(78,52,39,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(33,27,25,1)), color-stop(0%, rgba(57,40,32,1)), color-stop(0%, rgba(57,40,32,1)), color-stop(0%, rgba(0,0,11,1)), color-stop(100%, rgba(78,52,39,1)));
+	background: -webkit-linear-gradient(left, rgba(33,27,25,1) 0%, rgba(57,40,32,1) 0%, rgba(57,40,32,1) 0%, rgba(0,0,11,1) 0%, rgba(78,52,39,1) 100%);
+	background: -o-linear-gradient(left, rgba(33,27,25,1) 0%, rgba(57,40,32,1) 0%, rgba(57,40,32,1) 0%, rgba(0,0,11,1) 0%, rgba(78,52,39,1) 100%);
+	background: -ms-linear-gradient(left, rgba(33,27,25,1) 0%, rgba(57,40,32,1) 0%, rgba(57,40,32,1) 0%, rgba(0,0,11,1) 0%, rgba(78,52,39,1) 100%);
+	background: linear-gradient(to right, rgba(33,27,25,1) 0%, rgba(57,40,32,1) 0%, rgba(57,40,32,1) 0%, rgba(0,0,11,1) 0%, rgba(78,52,39,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211b19', endColorstr='#4e3427', GradientType=1 );
+}
+.main-page-content .main-page-purchase-block .wrapper {
+	padding: 50px 30px;
+	box-sizing: border-box;
+}
+.main-page-content .main-page-purchase-block .wrapper .text-block {
+	display: block;
+}
+.main-page-content .main-page-purchase-block .wrapper .text-block .title {
+	color: #fff;
+	font-family: "Raleway";
+	font-weight: 300;
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+.main-page-content .main-page-purchase-block .wrapper .text-block .title .name {
+	color: #c7b299;
+}
+.main-page-content .main-page-purchase-block .wrapper .text-block .reminder {
+	font-family: "Montserrat";
+	font-weight: 100;
+	font-size: 18px;
+	color: #615855;
+}
+.main-page-content .main-page-purchase-block .wrapper .purchase-button {
+	width: 170px;
+	height: 53px;
+	background-color: transparent;
+	font-family: "Raleway";
+	font-size: 14px;
+	line-height: 1.643;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #998675; 
+	color: #fff;
+	text-transform: uppercase;
+	outline: none;
+}
+.main-page-content .main-page-purchase-block .wrapper .purchase-button:hover {
+	background-color: #998675;
+	cursor: pointer;
+}
+.main-page-content .main-page-projects {
+	background-color: #fff;
+}
+.main-page-content .main-page-projects .wrapper {
+	display: block;
+	padding: 80px 0;
+	box-sizing: border-box;
+	text-align: center;
+}
+.main-page-content .main-page-projects .wrapper .title {
+	text-align: center;
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.main-page-content .main-page-projects .wrapper .desc {
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 28px;
+	margin: auto;
+	margin-bottom: 40px;
+	width: 766px;
+	text-align: center;
+}
+.main-page-content .main-page-projects .wrapper .filter-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 25px;
+}
+.main-page-content .main-page-projects .wrapper .filter-list .filter-item {
+	display: block;
+	padding: 9px 28px;
+	border-radius: 3px;
+	background-color: #fff;
+	border: 1px solid grey;
+	margin-right: 10px;
+	text-decoration: none;
+	outline: none;
+	color: #8c8c8c;
+	font-family: "Montserrat";
+	font-weight: 100;
+	font-size: 14px;
+	line-height: 21px;
+}
+.main-page-content .main-page-projects .wrapper .filter-list .filter-item:last-child {
+	margin-right: 0;
+}
+.main-page-content .main-page-projects .wrapper .filter-list .filter-item:hover {
+	background-color: #998675;
+	cursor: pointer;
+	color: #fff;
+	border: none;
+}
+.main-page-content .main-page-projects .wrapper .projects-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+.main-page-content .main-page-projects .wrapper .projects-list .project-item {
+	margin: 15px;
+	position: relative;
+	text-decoration: none;
+}
+.main-page-content .main-page-projects .wrapper .projects-list .project-item img {
+	width: 100%;
+	display: block;
+}
+.main-page-content .main-page-projects .wrapper .projects-list .project-item .project-text {
+	background-color: #fbfaf8;
+	position: relative;
+	padding: 30px;
+	box-sizing: border-box;
+}
+.main-page-content .main-page-projects .wrapper .projects-list .project-item .project-text:before {
+	content: "";
+	border: 10px solid transparent;	
+	border-bottom: 10px solid #fbfaf8;
+	position: absolute;
+	top: -20px;
+	left: 19px;
+}
+.main-page-content .main-page-projects .wrapper .projects-list .project-item .project-text .project-name {
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 20px;
+	color: #c7b299;
+}
+.main-page-content .main-page-projects .wrapper .projects-list .project-item .project-text .project-short-desc {
+	font-family: "Montserrat";
+	font-weight: 100;
+	font-size: 14px;
+	line-height: 20px;
+}
+.main-page-content .main-page-projects .wrapper .projects-list .project-item:hover img {
+	filter: brightness(30%);
+}
+.main-page-content .main-page-projects .wrapper .projects-list .project-item:hover .project-text {
+	background-color: #362f2d;
+}
+.main-page-content .main-page-projects .wrapper .projects-list .project-item:hover .project-text:before {
+	border-bottom: 10px solid #362f2d;
+}
+.main-page-content .main-page-projects .wrapper .projects-list .project-item:hover .project-text .project-name {
+	color: #fff;
+}
+.main-page-content .main-page-projects .wrapper .projects-list .project-item:hover .project-text .project-short-desc {
+	color: #c7b299;
+}
+.main-page-content .main-page-projects .wrapper .projects-list .project-item .link {
+	width: 25px;
+	height: 25px;
+	display: none;
+	fill: #fff;
+	border: none;
+	background-color: transparent;
+	position: absolute;
+	top: 35%;
+	left: 35%;
+	outline: none;
+}
+.main-page-content .main-page-projects .wrapper .projects-list .project-item .search {
+	width: 25px;
+	height: 24px;
+	display: none;
+	fill: #fff;
+	border: none;
+	background-color: transparent;
+	position: absolute;
+	top: 35%;
+	right: 35%;
+	outline: none;
+}
+.main-page-content .main-page-projects .wrapper .projects-list .project-item:hover .link,
+.main-page-content .main-page-projects .wrapper .projects-list .project-item:hover .search {
+	display: block;
+}
+.main-page-content .main-page-projects .wrapper .projects-list .project-item:hover .link:hover,
+.main-page-content .main-page-projects .wrapper .projects-list .project-item:hover .search:hover {
+	fill: #c7b299;
+	cursor: pointer;
+}
+.main-page-content .main-page-projects .wrapper .more {
+	width: 170px;
+	height: 53px;
+	background-color: transparent;
+	font-family: "Raleway";
+	font-size: 14px;
+	line-height: 1.643;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #998675; 
+	color: #8c8c8c;
+	text-transform: uppercase;
+	outline: none;
+}
+.main-page-content .main-page-projects .wrapper .more:hover {
+	background-color: #998675;
+	cursor: pointer;
+	color: #fff;
+}
+.main-page-content .main-page-presentation {
+	width: 100%;
+	background-color: #fff;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+}
+.main-page-content .main-page-presentation .video-box {
+	width: 100%;
+	height: 100%;
+	background-color: #f4f5f8;
+}
+.main-page-content .main-page-presentation .text-block {
+	position: absolute;
+}
+.main-page-content .main-page-presentation .text-block .video-play {
+	width: 100px;
+	height: 100px;
+	outline: none;
+	border: none;
+	border-radius: 50%;
+	background-color: transparent;
+	margin-bottom: 40px;
+}
+.main-page-content .main-page-presentation .text-block .video-play:hover {
+	cursor: pointer;
+}
+.main-page-content .main-page-presentation .text-block .video-play .video-play-icon .circle {
+	fill: black;
+	opacity: 0.3;
+}
+.main-page-content .main-page-presentation .text-block .video-play .video-play-icon .icon {
+	fill: #fff;
+}
+.main-page-content .main-page-presentation .text-block .title {
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+.main-page-content .main-page-presentation .text-block .desc {
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 28px;
+	margin: auto;
+	margin-bottom: 40px;
+	width: 615px;
+}
+.main-page-content .main-page-presentation .text-block time {
+	font-family: "Montserrat";
+	font-weight: 500;
+	font-size: 14px;
+	color: #c7b299;
+	line-height: 24px;
+}
+.main-page-content .main-page-mobiles {
+	width: 100%;
+	background-color: #fbfaf8;
+	display: block;
+}
+.main-page-content .main-page-mobiles .wrapper {
+	justify-content: center;
+	padding: 80px 0 0 0;
+	box-sizing: border-box;
+}
+.main-page-content .main-page-mobiles .wrapper img {
+	width: 423px;
+}
+.main-page-content .main-page-mobiles .wrapper .text-block {
+	width: 658px;
+}
+.main-page-content .main-page-mobiles .wrapper .text-block .title {
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 30px;
+	color: #555555;
+	margin-bottom: 40px;
+}
+.main-page-content .main-page-mobiles .wrapper .text-block .desc {
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 28px;
+	margin-bottom: 40px;
+}
+.main-page-content .main-page-mobiles .wrapper .text-block .advantages-list {
+	list-style-type: none;
+	padding-left: 100px;
+	font-family: "Montserrat";
+	font-weight: 100;
+	font-size: 16px;
+	color: #8c8c8c;
+	position: relative;
+}
+.main-page-content .main-page-mobiles .wrapper .text-block .advantages-list .advantages-item {
+	display: block;
+	line-height: 32px;
+	position: relative;
+}
+.main-page-content .main-page-mobiles .wrapper .text-block .advantages-list .advantages-item:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	background-image: url(../img/mobile-section-arrows.svg);
+	top: 5px;
+	left: -50px; 
+	line-height: 32px; 
+	background-size: cover;
+}
+.main-page-content .main-page-counters {
+	width: 100%;
+    background: linear-gradient(to right, rgba(33,27,25,1) 0%, rgba(57,40,32,1) 0%, rgba(57,40,32,1) 0%, rgba(0,0,11,1) 0%, rgba(78,52,39,1) 100%);
+}
+.main-page-content .main-page-counters .wrapper {
+	justify-content: space-evenly;
+	text-align: center;
+	padding: 50px 0;
+}
+.main-page-content .main-page-counters .wrapper .counter .icon {
+	fill: #c7b299;
+	margin-bottom: 30px;
+}
+.main-page-content .main-page-counters .wrapper .counter .number {
+	display: block;
+	font-family: "Montserrat";
+	font-weight: 100;
+	font-size: 48px;
+	line-height: 36px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.main-page-content .main-page-counters .wrapper .counter .item {
+	display: block;
+	font-family: "Montserrat";
+	font-weight: 100;
+	font-size: 14px;
+	line-height: 36px;
+	color: #c7b299;
+	line-height: 20px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+.main-page-content .main-page-counters .wrapper .counter hr {
+	width: 30px;
+	height: 2px;
+	background-color: #fff;
+	border: none;
+	margin: auto;
+}
+.main-page-content .main-page-posts {
+	width: 100%;
+	background-color: #fff;
+}
+.main-page-content .main-page-posts .wrapper {
+	flex-direction: column;
+	text-align: center;
+}
+.main-page-content .main-page-posts .wrapper .title {
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 30px;
+	color: #555555;
+	margin-bottom: 40px;
+}
+.main-page-content .main-page-posts .wrapper .desc {
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 28px;
+	margin-bottom: 40px;
+}
+.main-page-content .main-page-posts .wrapper .post-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	margin: 15px 15px 0 15px;
+	border: 1px solid #f8f8f8;
+	text-align: left;
+	position: relative;
+	width: 370px;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item .post-item-image {
+	display: block;
+	width: 370px;
+	height: 220px;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item .post-item-text {
+	padding: 30px;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item .post-item-text .title {
+	font-family: "Raleway";
+	font-weight: 600;
+	font-size: 20px;
+	color: #555555;
+	margin-bottom: 24px;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item .post-item-text .desc {
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 22px;
+	margin-bottom: 30px;
+	color: #8c8c8c;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item .post-item-text .more {
+	font-family: "Montserrat";
+	font-weight: 200;
+	font-size: 14px;
+	line-height: 20px;
+	color: #c7b299;
+	text-decoration: none;
+	position: relative;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item .post-item-text .more:after {
+	content: "";
+	position: absolute;
+	border: 4px solid transparent;
+	border-left: 5px solid #c7b299;
+	right: -15px;
+	top: 6px;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item .date {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	display: block;
+	color: #fff;
+	text-align: center;
+	width: 50px;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item .date .day {
+	display: block;
+	font-family: "Montserrat";
+	font-weight: 200;
+	font-size: 24px;
+	line-height: 20px;
+	width: 100%;
+	padding: 9px 0;
+	background-color: #363636;
+	border-radius: 3px 3px 0 0;
+
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item .date .month {
+	display: block;
+	background-color: black;
+	width: 100%;
+	height: 25px;
+	border-radius: 0 0 3px 3px;
+	text-transform: capitalize;
+	font-family: "Roboto";
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 20px;
+	vertical-align: middle;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item:hover {
+	cursor: pointer;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item:hover .post-item-image {
+	filter: brightness(30%);
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item:hover .post-item-text {
+	background-color: #362f2d;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item:hover .post-item-text .title {
+	color: #c7b299;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item:hover .post-item-text .desc {
+	color: #fff;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item:hover .post-item-text .more:hover {
+	text-decoration: underline;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item:hover .date .day {
+	background-color: #c7b299;
+}
+.main-page-content .main-page-posts .wrapper .post-list .post-item:hover .date .month {
+	background-color: #a48d72;
+}
+.main-page-content .main-page-posts .wrapper .arrows a {
+	fill: #d1d1d1;
+	text-decoration: none;
+}
+.main-page-content .main-page-posts .wrapper .arrows a:hover {
+	fill: #c7b299;
+}
+.main-page-content .main-page-partners {
+	background-image: url(../img/background-partners.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 490px;
+}
+.main-page-content .main-page-partners .wrapper {
+	justify-content: space-around;
+	height: 100%;
+}
+.main-page-content .main-page-partners .wrapper a {
+	text-decoration: none;
+	padding: 10px;
+}
+footer {
+	background-color: #191919;
+	width: 100%;
+}
+footer .wrapper {
+	align-items: flex-start;
+	height: 100%;
+}
+footer .wrapper .footer-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 269px;
+}
+footer .wrapper .footer-block hr {
+	border: 1px solid #252525;
+	margin: 18px 0;
+}
+footer .wrapper .footer-block .logo-box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-decoration: none;
+	color: #fff;
+	margin-bottom: 30px;
+}
+footer .wrapper .footer-block .logo-box .logo-text {
+	font-family: 'Raleway';
+	font-size: 34px;
+	font-weight: 100;
+}
+footer .wrapper .footer-block .logo-box img {
+	width: 64px;
+	height: 56px;
+}
+footer .wrapper .footer-block .desc {
+	font-family: "Montserrat";
+	font-weight: 200;
+	font-size: 14px;
+	line-height: 24px;
+	color: #555555;
+	margin-bottom: 30px;
+}
+footer .wrapper .footer-block .more {
+	font-family: "Montserrat";
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #d1d1d1;
+	text-decoration: none;
+	position: relative;
+}
+footer .wrapper .footer-block .more:after {
+	content: "";
+	position: absolute;
+	border: 5px solid transparent;
+	border-left: 6px solid #d1d1d1;
+	left: 85px;
+	top: 6px;
+}
+footer .wrapper .footer-block .title {
+	color: #fff;
+	font-family: "Raleway";
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 33px;
+	padding-top: 27px;
+}
+footer .wrapper .footer-block .footer-block-item {
+	text-decoration: none;
+}
+footer .wrapper .footer-block .footer-block-item time {
+	font-family: "Montserrat";
+	font-weight: 200;
+	font-size: 12px;
+	line-height: 20px;
+	color: #363636;
+}
+footer .wrapper .footer-block .footer-block-item .desc {
+	font-family: "Montserrat";
+	font-weight: 200;
+	font-size: 14px;
+	line-height: 20px;
+	color: #555555;
+	margin-bottom: 0;
+}
+footer .wrapper .footer-block .footer-block-item .desc .tag {
+	color: #00bff3;
+}
+footer .wrapper .footer-block .footer-block-item .desc .external-link {
+	color: #959595;
+}
+footer .wrapper .footer-block .footer-block-item:hover time {
+	color: #fff;
+}
+footer .wrapper .footer-block .footer-block-item:hover .desc {
+	color: #c7b299;
+}
+footer .wrapper .footer-block .footer-block-image-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+footer .wrapper .footer-block .footer-block-image-list .footer-block-image-item {
+	margin-bottom: 10px;
+	text-decoration: none;
+	transition: transform 0.25s linear;
+}
+footer .wrapper .footer-block .footer-block-image-list .footer-block-image-item img {
+	width: 130px;
+	height: 98px;
+}
+footer .wrapper .footer-block .footer-block-image-list .footer-block-image-item:hover img {
+	filter: brightness(30%);
+}
+.copyright-section {
+	background-color: #111111;
+	width: 100%;
+}
+.copyright-section .wrapper {
+	padding: 46px 30px 46px 30px;
+}
+.copyright-section .wrapper .copyright-section-box {
+	display: block;
+}
+.copyright-section .wrapper .copyright-section-box .links {
+	font-family: "Montserrat";
+	font-weight: 200;
+	font-size: 13px;
+	color: #555555;
+	text-decoration: none;
+	border-right: 1px solid #252525;
+	padding: 0 21px; 
+}
+.copyright-section .wrapper .copyright-section-box .links .name {
+	color: #959595;
+}
+.copyright-section .wrapper .copyright-section-box .links:first-child {
+	padding-left: 0;
+}
+.copyright-section .wrapper .copyright-section-box .links:last-child {
+	padding-right: 0;
+	border-right: none;
+}
+.copyright-section .wrapper .copyright-section-box .links:hover {
+	color: #c7b299;
+}
